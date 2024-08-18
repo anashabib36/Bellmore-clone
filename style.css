@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --primary-color: #170B00;
+    --secondary-color: #E91A29;
+    --text-color: #000000;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    overflow: hidden;
+}
+
+.nan_logo img {
+    display: flex; 
+    align-items: center;
+    max-width: 200px;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__link a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--text-color);
+}
+
+.nav__icon {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav__bg {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.header {
+    background-image: url('/assets/header-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+/* Header contant*/
+
+.header__contant {
+    padding-block: 156px;
+    text-align: center;
+}
+
+.header__contant h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 74.38px;
+    letter-spacing: -4px;
+}
+
+.header__contant span {
+    font-size: 42.5px;
+    line-height: 74.38px;
+    letter-spacing: -2px;
+}
+
+.header__contant img {
+    margin-top: -25px;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.btn button {
+    padding: 8px 23px;
+    border-radius: 2.55rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Meet Container*/
+
+.meet__container {
+    padding-block: 80px 70px;
+}
+
+.section__headings h2 {
+    font-size: 41px;
+    text-align: center;
+    color: var(--primary-color);
+    line-height: 72px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+.section__headings span {
+    color: var(--secondary-color);
+}
+
+.meet__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.55rem;
+    margin-top: 2rem;
+}
+
+.meet__card {
+    padding: 1.80rem 2rem;
+    background-color: #F6E6E6;
+    text-align: center;
+    border: 1.66px solid #0000004D;
+    border-radius: 20px;
+}
+
+.meet__card h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.meet__card img {
+    max-width: 150px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.make__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.55rem;
+    margin-block: 2rem 3rem;
+}
+
+.make__card {
+    border: 1.6px solid #0000004D;
+    text-align: center;
+    border-radius: 1.3rem;
+    padding-bottom: 3rem;
+}
+
+.make__card img {
+    max-width: 280px;
+}
+
+.make__card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 0.20rem;
+}
+
+.make__card p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -1px;
+    padding-inline: 2rem;
+    margin-top: 0.20rem;
+}
+
+.trust__bg {
+    background-color: #eee4e4;
+}
+
+.trust__grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.trust__grid img {
+    max-width: 150px;
+}
+
+.trust__card {
+    background-color: #F6E6E6;
+    border: 1.6px solid #0000004D;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 10rem;
+}
+
+.trust__card p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: start;
+    margin-bottom: 8rem;
+}
+
+.email__container {
+    background-color: #F0E5F6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 7rem;
+    border-radius: 24px;
+}
+
+.email__contant h2 {
+    font-size: 40px;
+    color: var(--primary-color);
+    line-height: 52px;
+    letter-spacing: -3px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.email__contant span {
+    color: var(--secondary-color)
+}
+
+.email__contant p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    line-height: 24px;
+}
+
+.email__image img {
+    max-width: 250px;
+    text-align: end;
+}
+
+.footer__container {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: 300px repeat(3, 1fr);
+    gap: 3rem;
+    position: relative;
+}
+
+.footer__logo {
+    max-width: 150px;
+    margin-bottom: 0.45rem;
+  }
+
+  .footer__col p {
+    margin-bottom: 2rem;
+    color: #52525B;
+    margin-right: 2rem;
+    
+  }
+
+  .footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+  }
+
+  .footer__col a {
+    display: flex;
+    align-items: center;
+    color: #52525B;
+    margin-bottom: 1rem;
+  }
+
+  .footer__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E2E8F0;
+    padding: 1rem 1rem;
+  }
+
+@media (width < 900px) {
+    .nav__links {
+        display: none;
+    }
+
+    .header__contant {
+        padding-block: 140px;
+    }
+
+    .header__contant h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .header__contant img {
+        min-width: 100px;
+        margin-bottom: 0;
+    }
+
+    .meet__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .meet__container {
+        padding: 0rem 0rem;
+    }
+
+    .meet__card {
+        padding: .50rem .50rem;
+    }
+
+    .section__headings h2 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .meet__card img {
+        max-width: 90px;
+    }
+
+    .make__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.50rem;
+    }
+
+    .trust__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .email__container {
+        width: 700px;
+        padding: 1rem 1rem;
+    }
+
+    .email__image img {
+        max-width: 200px;
+    }
+
+    .trust__grid img {
+        max-width: 100px;
+    }
+    .trust__card {
+        margin-bottom: 0;
+        padding: 1rem 1rem;
+    }
+    .trust__card p {
+        margin-bottom: 4rem;
+    }
+
+    .email__container {
+        display: none;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr 200px;
+      }
+
+      .footer__bar {
+          flex-wrap: wrap;
+          text-align: center;
+      }
+
+}
+
+@media (width < 600px){
+    .make__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust__grid{ 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .meet__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .email__container {
+        display: none;
+    }
+
+    .trust__card p {
+        margin-bottom: 0rem;
+    }
+
+    .trust__grid img {
+        max-width: 100px;
+    }
+
+    .section__headings h2 {
+        font-size: 24px;
+    }
+
+    .header__contant h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr 150px;
+    }
+
+    .footer__bar {
+        text-align: center;
+    }
+
+    
+}
